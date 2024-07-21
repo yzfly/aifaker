@@ -54,3 +54,16 @@ print(faker.meta_fake(data="美国地址"))
 # generate anything you want just by passing in the data description and example
 print(faker.meta_fake(data="美国手机号", example="123-456-7890"))
 ```
+
+The results should be like:
+```
+John Doe
+1985-12-25
+https://www.example.com
+exampleuser@example.com
+{'name': 'William Smith', 'birthday': '1985-12-15', 'address': 'https://www.google.com/', 'phone_number': '13745678901', 'email': 'exampleuser@example.com', 'id_card': '310107198501234567', 'bank_card': '6222020282119830358'}
+13765432109
+https://www.google.com/
+1234 Main St, Anytown, USA, 12345
+123-456-7890
+```
