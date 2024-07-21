@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aifaker"
+version = "0.0.3"
+description = "Faker information generator powered by LLM"
+authors = [{name = "YZFly", email = "zphyix@protonmail.com"}]
+dependencies = [
+    "python-dotenv",
+    "openai>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pylint"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["aifaker"]
